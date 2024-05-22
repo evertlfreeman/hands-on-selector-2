@@ -2,7 +2,66 @@
 <html>
 <head>
   <style>
-    /* Add your CSS here */
+  div span b {
+    color: purple;
+  }
+
+  ul > li {
+    font-weight: bold;
+  }
+
+  ul ~ a {
+    color: green;
+  }
+
+  input[type="checkbox"]:checked {
+         background-color: yellow !important; /* Using !important to ensure override */
+         -webkit-appearance: none; /* Disables native styling */
+         appearance: none;
+         width: 20px; /* Custom size */
+         height: 20px; /* Custom size */
+       }
+  input[type="checkbox"]:checked:after {
+         content: "✓";
+         display: block;
+         color: black;
+         position: relative;
+         left: 5px; /* Center the check mark */
+         top: -3px;
+  }
+
+  .box{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        padding:20px;
+        margin:10px;
+        border:1px solid black;
+  }
+  input:focus {
+    border: 2px solid red;
+  }
+
+  input:disabled {
+    background-color: grey;
+    color: white;
+  }
+  
+  ul li:first-child {
+    background-color: blue;
+  }
+
+  a:last-of-type {
+    text-decoration: underline;
+  }
+
+  li:not(:first-child) {
+    color: orange;
+  }
+
+  input[type="text"][required] {
+    box-shadow: 1px 1px 5px black;
+  }
   </style>
 </head>
 <body>
